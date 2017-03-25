@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Schedule:</strong>
+  <%= @eligibility.schedule %>
+</p>
+
+<p>
+  <strong>Branch:</strong>
+  <%= @eligibility.branch %>
+</p>
+
+<p>
+  <strong>Cgpa min:</strong>
+  <%= @eligibility.cgpa_min %>
+</p>
+
+<p>
+  <strong>Cgpa max:</strong>
+  <%= @eligibility.cgpa_max %>
+</p>
+
+<p>
+  <strong>Package min:</strong>
+  <%= @eligibility.package_min %>
+</p>
+
+<p>
+  <strong>Package max:</strong>
+  <%= @eligibility.package_max %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @eligibility.comments %>
+</p>
+
+<p>
+  <strong>Skills:</strong>
+  <%= @eligibility.skills %>
+</p>
+
+<%= link_to 'Edit', edit_eligibility_path(@eligibility) %> |
+<%= link_to 'Back', eligibilities_path %>

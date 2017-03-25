@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  schedule: one
+  branch: MyString
+  cgpa_min: 9.99
+  cgpa_max: 9.99
+  package_min: 9.99
+  package_max: 9.99
+  comments: MyText
+  skills: MyText
+
+two:
+  schedule: two
+  branch: MyString
+  cgpa_min: 9.99
+  cgpa_max: 9.99
+  package_min: 9.99
+  package_max: 9.99
+  comments: MyText
+  skills: MyText

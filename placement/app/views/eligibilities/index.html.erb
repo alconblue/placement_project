@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Eligibilities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Schedule</th>
+      <th>Branch</th>
+      <th>Cgpa min</th>
+      <th>Cgpa max</th>
+      <th>Package min</th>
+      <th>Package max</th>
+      <th>Comments</th>
+      <th>Skills</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @eligibilities.each do |eligibility| %>
+      <tr>
+        <td><%= eligibility.schedule %></td>
+        <td><%= eligibility.branch %></td>
+        <td><%= eligibility.cgpa_min %></td>
+        <td><%= eligibility.cgpa_max %></td>
+        <td><%= eligibility.package_min %></td>
+        <td><%= eligibility.package_max %></td>
+        <td><%= eligibility.comments %></td>
+        <td><%= eligibility.skills %></td>
+        <td><%= link_to 'Show', eligibility %></td>
+        <td><%= link_to 'Edit', edit_eligibility_path(eligibility) %></td>
+        <td><%= link_to 'Destroy', eligibility, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Eligibility', new_eligibility_path %>

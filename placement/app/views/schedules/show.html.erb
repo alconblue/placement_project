@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @schedule.company %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @schedule.date %>
+</p>
+
+<p>
+  <strong>Visited:</strong>
+  <%= @schedule.visited %>
+</p>
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to 'Back', schedules_path %>
+
+<%= link_to 'New Recruitment Eligibility', new_placement_eligibility_path(@schedule) %>
+<br>
+<%= link_to 'New Application', new_placement_application_path(@schedule) %>
